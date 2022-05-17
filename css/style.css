@@ -45,15 +45,10 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
 }
 
 nav h3 {
-    display: flex;
     margin-left: 116px;
-    width: 20%;
-    justify-content: flex-start;
-    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 24px;
@@ -75,20 +70,15 @@ nav ul a {
     size: 16px;
     line-height: 16px;
 }
-nav ul a:first-child {
- color:var(--grey-100)
-}
 
-nav ul a:hover {
-  
-   
-    
+nav ul a:first-child {
+    color: var(--grey-100)
 }
 
 main {
     display: flex;
     margin: 0 auto;
-    width: 80%;
+    width: 85%;
     height: 100%;
     gap: 40px;
     margin-top: 52px;
@@ -102,8 +92,6 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: normal;
-    margin-left: 20px;
-
 }
 
 .cardProduto {
@@ -114,12 +102,10 @@ main {
     max-width: 294px;
     height: 408px;
     border: 1px solid #ffffff;
-
 }
 
 .cardProduto:hover {
-    
-    border: 1px solid black;
+    border: 1px solid var(--secondary-color);
 }
 
 .cardProduto img {
@@ -132,7 +118,7 @@ main {
 }
 
 .cardProdutoDescricao {
-    padding: 10px;
+    padding: 0;
     border: none;
     text-align: left;
     display: flex;
@@ -142,6 +128,7 @@ main {
 }
 
 .cardProdutoDescricao span {
+    margin-top: 10px;
     background-color: var(--primary-color);
     color: var(--white);
     padding: 4px;
@@ -181,6 +168,7 @@ main {
     color: var(--grey-50);
     border: none;
     height: 30px;
+    transition: 0.5s ease-in-out;
 }
 
 .cardProdutoDescricao button:hover {
@@ -192,9 +180,7 @@ main {
 .Secaolateral {
     flex-direction: column;
     justify-content: center;
-    margin-right: 22px;
-    height: 54px;
-
+    height: 100%;
 }
 
 .Secaolateral .pesquisar {
@@ -202,8 +188,6 @@ main {
     width: 100%;
     flex-direction: row;
     margin: 0 auto;
-    margin-right: 22px;
-
 }
 
 .Secaolateral .pesquisar input {
@@ -216,7 +200,6 @@ main {
     align-content: center;
     justify-content: center;
     border: none;
-
 }
 
 .Secaolateral .pesquisar button {
@@ -241,14 +224,12 @@ main {
     font-size: 18px;
     width: 100%;
     height: 50px;
-    margin-top: 20px; 
-
+    margin-top: 20px;
 }
 
 .carrinho_carrinhoCompras {
     display: flex;
     flex-direction: column;
-
     background-color: var(--grey-0);
     width: 347px;
     height: 214px;
@@ -257,6 +238,7 @@ main {
     justify-content: center;
 
 }
-.carrinho_carrinhoCompras h2{
+
+.carrinho_carrinhoCompras h2 {
     list-style-type: none;
 }
