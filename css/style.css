@@ -247,3 +247,8 @@ main {
 .carrinho_carrinhoCompras h2 {
     list-style-type: none;
 }
+.img-sem-estoque{
+    width: 500px;
+    height: 500px;
+background-color: var(--grey-0);
+}
