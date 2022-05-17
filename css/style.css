@@ -40,7 +40,7 @@ header {
 nav {
     display: flex;
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
     justify-content: space-between;
     flex-direction: row;
     justify-content: center;
@@ -57,18 +57,24 @@ nav h3 {
 nav ul {
     display: flex;
     width: 80%;
+    gap: 20px;
     align-items: center;
     justify-content: flex-end;
     margin-right: 116px;
+    flex-wrap: wrap;
 }
 
 nav ul a {
     font-family: 'Inter', sans-serif;
-    margin: 10px;
     color: var(--grey-50);
     font-weight: 600;
     size: 16px;
     line-height: 16px;
+}
+
+nav ul a:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
 }
 
 nav ul a:first-child {
@@ -88,10 +94,9 @@ main {
     width: 75%;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 38px;
     flex-direction: row;
     align-items: center;
-    justify-content: normal;
 }
 
 .cardProduto {
@@ -106,6 +111,7 @@ main {
 
 .cardProduto:hover {
     border: 1px solid var(--secondary-color);
+    transform: scale(1.02);
 }
 
 .cardProduto img {
@@ -118,7 +124,7 @@ main {
 }
 
 .cardProdutoDescricao {
-    padding: 0;
+    padding: 0 10px;
     border: none;
     text-align: left;
     display: flex;
@@ -176,7 +182,6 @@ main {
     color: var(--primary-color);
 }
 
-
 .Secaolateral {
     flex-direction: column;
     justify-content: center;
@@ -188,6 +193,7 @@ main {
     width: 100%;
     flex-direction: row;
     margin: 0 auto;
+    gap: 10px;
 }
 
 .Secaolateral .pesquisar input {
@@ -209,7 +215,7 @@ main {
     line-height: 16px;
     color: var(--white);
     width: 40%;
-    height: 50px;
+    height:54px;
     border: none;
 }
 
@@ -236,7 +242,6 @@ main {
     align-items: center;
     align-content: center;
     justify-content: center;
-
 }
 
 .carrinho_carrinhoCompras h2 {
