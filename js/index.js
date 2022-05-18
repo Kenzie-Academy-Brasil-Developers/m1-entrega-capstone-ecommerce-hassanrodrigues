@@ -18,7 +18,7 @@ function criandoVitrine(arr) {
     span.innerText = arr.tag[0]
     h4.innerText = arr.nameItem
     p.innerText = arr.description
-    h5.innerText = arr.value
+    h5.innerText = 'R$ ' + arr.value + '.00'
     button.classList.add('comprar')
     button.id = arr.id
     button.innerText = arr.addCart
@@ -81,7 +81,7 @@ addEventListener("click", (e) => {
     }
 })
 /*-----adicionando no carrinho-------- */
-let carrinhoProdutos = []//nova lista
+let carrinhoProdutos = [] //nova lista
 
 function produto(id) {
     return data[id]
@@ -111,7 +111,6 @@ addEventListener('click', (e) => {
         }
     }
     if (button.className == "remover-produto") {
-        console.log('oiii')
         removerProduto(butto_id);
         atualizarCarrinho(carrinhoProdutos);
         return;
@@ -129,8 +128,7 @@ function atualizarCarrinho(arr) {
     carrinhoList.innerHTML = ''
     if (arr.length > 0) {
         for (let i = 0; i < carrinhoProdutos.length; i++) {
-            ul.innerHTML += 
-            `<li class="carrinho-compras_produto">
+            ul.innerHTML += `<li class="carrinho-compras_produto">
                 <img src="${carrinhoProdutos[i].img}" alt="">
                 <div class="carrinho-compras_descricao">
                     <h4>${carrinhoProdutos[i].nameItem}</h4>
@@ -142,8 +140,7 @@ function atualizarCarrinho(arr) {
         console.log(ul)
         carrinhoList.appendChild(ul)
         div.innerHTML = ""
-        div.innerHTML = `     
-        <div class= 'carinhoDetalhes'>
+        div.innerHTML = ` <div class= 'carinhoDetalhes'>
             <li class="carinhoDetalhes_quant">
                 <p>Quantiddade</p>
                 <span>${carrinhoProdutos.length}</span>
@@ -155,14 +152,11 @@ function atualizarCarrinho(arr) {
         </div>`
         return
     }
-    // let carrinhoList = document.querySelector(".carrinhoList")
     carrinhoList.innerHTML = ''
     div.innerHTML = ''
-    carrinhoList.innerHTML = `
-        <h2>Carrinho vazio </h2>        
+    carrinhoList.innerHTML = `<h2>Carrinho vazio </h2>        
         <p>Adicione itens</p>`
 }
-
 
 
 /*

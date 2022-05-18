@@ -339,11 +339,12 @@ main {
 }
 
 ::-webkit-scrollbar {
-    width:7px;
+    width: 7px;
 }
+
 ::-webkit-scrollbar-thumb {
-    background:var(--secondary-color);
+    background: var(--secondary-color);
     border-radius: 20%;
     opacity: 20%;
-    
+
 }
