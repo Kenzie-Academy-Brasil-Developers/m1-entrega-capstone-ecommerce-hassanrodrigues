@@ -13,7 +13,8 @@ function criandoVitrine(arr) {
     let button = document.createElement('button')
 
     cardProduto.classList.add('cardProduto')
-    img.src = arr.img
+    img.src = `${arr.img}`
+    console.log(img)
     cardProdutoDescricao.classList.add('cardProdutoDescricao')
     span.innerText = arr.tag[0]
     h4.innerText = arr.nameItem
